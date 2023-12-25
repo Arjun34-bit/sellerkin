@@ -6,6 +6,8 @@ const productRoutes = require("./routes/productsRoutes");
 const sellerRoutes = require("./routes/sellerRoutes");
 const cors = require("cors");
 const path = require("path");
+const Product = require("./modals/Product");
+const { listings } = require("./data");
 dotenv.config();
 connectDB();
 app.use(cors());
@@ -29,3 +31,5 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.listen("5000", console.log(`Server Started at Port : ${PORT}`.yellow.bold));
+
+Product.insertMany(listings);
