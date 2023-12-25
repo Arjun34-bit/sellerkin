@@ -12,8 +12,8 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT;
-app.use("/seller", sellerRoutes);
-app.use("/product", productRoutes);
+// app.use("/seller", sellerRoutes);
+// app.use("/product", productRoutes);
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
