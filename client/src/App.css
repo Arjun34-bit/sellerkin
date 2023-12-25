@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.p-content {
+  margin-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.parent {
+  position: relative;
+  height: 88vh;
+}
+
+.acordians {
+  padding: 5px;
+}
+.footer {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.close-box {
+  cursor: pointer;
+}
+.close-box:hover {
+  color: white;
+  background-color: black;
+}
