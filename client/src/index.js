@@ -8,11 +8,11 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider>
-    <BrowserRouter>
-      <ListingProvider>
-        <App />
-      </ListingProvider>
-    </BrowserRouter>
+    {/* <BrowserRouter> */}
+    <ListingProvider>
+      <App />
+    </ListingProvider>
+    {/* </BrowserRouter> */}
   </ChakraProvider>
 );
 
