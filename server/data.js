@@ -1,4 +1,4 @@
-export const listings = [
+const listings = [
   {
     category: "Shoes",
     title: "Sneakers",
@@ -242,3 +242,5 @@ export const listings = [
     sellerName: "Arjun Devendra",
   },
 ];
+
+// export default listings;

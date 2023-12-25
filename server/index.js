@@ -32,4 +32,4 @@ if (process.env.NODE_ENV === "production") {
 
 app.listen("5000", console.log(`Server Started at Port : ${PORT}`.yellow.bold));
 
-Product.insertMany(listings);
+// Product.insertMany(listings);
