@@ -7,6 +7,7 @@ const sellerRoutes = require("./routes/sellerRoutes");
 const cors = require("cors");
 const path = require("path");
 const Product = require("./modals/Product");
+// const build=require("../client/build")
 const { listings } = require("./data");
 dotenv.config();
 connectDB();
@@ -15,8 +16,9 @@ app.use(express.json());
 
 const PORT = process.env.PORT;
 // app.use("/seller", sellerRoutes);
-// app.use("/product", productRoutes);
+app.use("/product", productRoutes);
 const __dirname1 = path.resolve();
+console.log(__dirname1);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname1, "/client/build")));
